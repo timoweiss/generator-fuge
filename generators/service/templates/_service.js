@@ -12,6 +12,6 @@ seneca.add({role: '<%= name %>', cmd: 'action2'}, function(args, callback) {
   callback(null, {data: 'data'});
 });
 
-seneca.listen({host: process.env.SERVICE_HOST, port: process.env.SERVICE_PORT});
+seneca.use('mash', {auto: true, pin: {role: '<%= name %>'}});
 
 module.exports.seneca = seneca;
