@@ -4,6 +4,8 @@ module.exports = function(server) {
   server.register(require('chairo'), function(err) {
     var seneca = server.seneca;
 
+    seneca.use('mesh', {auto:true});
+
     seneca.client({
       host: process.env.PROXY_HOST,
       port: process.env.service1_PORT,

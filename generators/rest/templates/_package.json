@@ -14,7 +14,9 @@
     "chairo": "^2.0.0",
     "good": "^6.4.0",
     "good-console": "^5.1.0",
-    "hapi": ">=11.x.x"
+    "hapi": ">=11.x.x",
+    "seneca-mesh": "^0.7.0",
+    "seneca-balance-client": "^0.4.0"
   },
   "repository": {
     "private": true

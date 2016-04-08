@@ -1,0 +1,26 @@
+{
+  "name": "<%= name %>",
+  "description": "my awesome service",
+  "keywords": [
+    "seneca",
+    "service"
+  ],
+  "license": "MIT",
+  "version": "0.1.0",
+  "main": "./host.js",
+  "engines": {
+    "node": "*"
+  },
+  "dependencies": {
+    "seneca": "^2.0.0",
+    "seneca-mesh": "^0.7.0",
+    "seneca-balance-client": "^0.4.0",
+    "seneca-env-plugins": "0.0.0"
+  },
+  "repository": {
+    "private": true
+  },
+  "scripts": {
+    "lint": "jshint **/*.js"
+  }
+}
