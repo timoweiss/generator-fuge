@@ -6,16 +6,6 @@ module.exports = function(server) {
 
     seneca.use('mesh', {auto:true});
 
-    seneca.client({
-      host: process.env.PROXY_HOST,
-      port: process.env.service1_PORT,
-      pin: 'role:service1'});
-
-    seneca.client({
-      host: process.env.PROXY_HOST,
-      port: process.env.service2_PORT,
-      pin: 'role:service2'});
-
     server.route({
       method: 'GET',
       path: '/service1/action1',
